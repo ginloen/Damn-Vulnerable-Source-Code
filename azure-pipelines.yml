@@ -19,5 +19,7 @@ steps:
     pip install pytest pytest-azurepipelines
     pytest
   displayName: 'pytest'
+
 - task: MicrosoftSecurityDevOps@1
   inputs:
+    tools: 'bandit'
